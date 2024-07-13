@@ -1,0 +1,27 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#theme-toggle {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border-radius: 30px;
+}
+
+:root {
+  --background-color: white;
+  --text-color: black;
+  --button-bg-color: black;
+  --button-text-color: white;
+}
+
+[data-theme="dark"] {
+  --background-color: black;
+  --text-color: white;
+  --button-bg-color: white;
+  --button-text-color: black;
+}
